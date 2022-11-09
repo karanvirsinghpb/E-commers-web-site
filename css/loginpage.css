@@ -1,14 +1,20 @@
 .loginpage 
 {
     position: absolute;
-    background-color: #727070b4;
+    top: 0;
+    background-color: #727070c4;
     z-index: 1;
     top: 8%;
     width: 100vw;
     height: 95vh;
-    left: 100%;
-    /* visibility: hidden; */
+    transform: translateX(-100vw);
 }
+.togallogin{
+    transform: translateX(0vw);
+    
+    transition: 1s;
+}
+
 .inputlayout{
     background-color: #f5f5f5;
     color: #5a5656;
@@ -21,13 +27,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     }
-.animatelogin{
-    animation: in 1s ;
-}
-.animatelogin{
-    animation: out 1s ;
 
-}
 @keyframes in{
     0%{
 transform: translate(100%,0%);

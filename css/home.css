@@ -488,3 +488,27 @@ cursor: pointer;
         top: 9%;
     }
 }
+
+.adds{
+    margin-left: 10vw;
+    width: 80vw;
+    height: 40vh;
+    background-color: black;
+    padding: .5rem;
+    /* overflow: hidden; */
+    /* overflow-x: auto; */
+    /* display:flex; */
+    white-space: nowrap;    
+    
+}
+.adds section{
+    display: inline-block;
+    width: 80vw;
+    height: 40vh;
+    border: 1px solid white;
+}
+.adds section img{
+    width: 100%;
+    /* height: 100%; */
+
+}

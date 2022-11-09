@@ -1,4 +1,5 @@
 let topnav = Array.from(document.querySelectorAll('.active_tnav'))
+let login_page = document.querySelector('.loginpage')
 
 
 
@@ -33,41 +34,9 @@ else{
 }
 }
 
-let scrollvalueoflogin=100;
-function log_in() {
-    if(scrollvalueoflogin>0)   
-    {
 
-        scrollvalueoflogin -=2;
-        document.querySelector('.loginpage').style.left = scrollvalueoflogin +'%';
-        requestAnimationFrame(log_in)
-    }
-
-}
-function log_out() {
-    if(scrollvalueoflogin<=100)   
-    {
-
-        scrollvalueoflogin +=2;
-        document.querySelector('.loginpage').style.left = scrollvalueoflogin +'%';
-        requestAnimationFrame(log_out)
-    }
-    else{
-        document.querySelector('.loginpage').style.visibility = 'hidden'
-    }
-
-}
 function login_click(){
-    if( scrollvalueoflogin<=0){
-        log_out()
-            
-
-    }
-    else{
-        document.querySelector('.loginpage').style.visibility = 'visible'
-        log_in();
-
-    }
+ login_page.classList.toggle('togallogin')
 }
 
 
