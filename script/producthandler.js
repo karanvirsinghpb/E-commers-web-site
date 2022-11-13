@@ -4,6 +4,8 @@ let totalwomen=0;
 let totalacsesories=0;
 let totalkids=0;
 let bottomnev = Array.from(document.querySelectorAll('.active_nav'));
+// this is for item adress
+
 let productData = [
     { name: 'hoodies', image: '../allImages/product-1.png', rating: 5, price: '240', tag: 'M' },
     { name: 'hoodies', image: '../allImages/g4.jpg', rating: 5, price: '240', tag: 'W' },
